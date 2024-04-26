@@ -1,0 +1,6 @@
+mysql-connector-python
+fastapi[all]
+uvicorn==0.20.0
+
+
+
