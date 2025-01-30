@@ -59,7 +59,7 @@ def complete_order(session_id: str):
         order = inprogress_orders[session_id]
         order_id = save_to_db(order)
         if order_id == -1:
-            fulfillment_text = "Sorry, I couldn't process your order due to a backend error. " \
+            fulflllment_text = "Sorry, I couldn't process your order due to a backend error. " \
                                "Please place a new order again"
         else:
             order_total = db_helper.get_total_order_price(order_id)
